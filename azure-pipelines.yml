@@ -14,9 +14,9 @@ steps:
   inputs:
     scanCentralCtrlUrl: 'http://192.168.11.46:9090/scancentral-ctrl'
     scanCentralClientToken: 'admin123!'
-    sscUrl: 'http://192.168.11.53:8081/ssc'
-    sscCiToken: 'YTk4NTQ2MDctMzliMC00MDk2LTkyNDUtOTVhOWM2ZTAyNjY4'
+    sscUrl: 'http://192.168.11.46:8080/ssc'
+    sscCiToken: 'ZmQ4YmNmZmUtYjUwMS00NzhlLWEyYTEtN2Y5Y2VmZGQ2ODk2'
     uploadToSSC: true
     applicationIdentifierType: 'byId'
-    applicationVersionId: '10005'
+    applicationVersionId: '10010'
     autoDetectBuildTool: true
