@@ -10,10 +10,13 @@ pool:
   name: test
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: FortifyScanCentralSAST@7
+  inputs:
+    scanCentralCtrlUrl: 'http://192.168.11.46:9090/scancentral-ctrl'
+    scanCentralClientToken: 'admin123!'
+    sscUrl: 'http://192.168.11.53:8081/ssc'
+    sscCiToken: 'YTk4NTQ2MDctMzliMC00MDk2LTkyNDUtOTVhOWM2ZTAyNjY4'
+    uploadToSSC: true
+    applicationIdentifierType: 'byId'
+    applicationVersionId: '10005'
+    autoDetectBuildTool: true
