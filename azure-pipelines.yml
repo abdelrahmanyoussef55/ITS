@@ -13,3 +13,4 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: 'StaticCodeAnalyzer.ps1'
+    pwsh: true
